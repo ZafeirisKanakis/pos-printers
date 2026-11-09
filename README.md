@@ -73,8 +73,8 @@ virtual-printer.mjs                 # fake network printer for testing
 ## Getting started
 
 ```bash
-git clone https://github.com/<your-username>/expo-escpos-printer.git
-cd expo-escpos-printer
+git clone https://github.com/ZafeirisKanakis/pos-printers.git
+cd pos-printers
 npm install
 npx expo prebuild
 npx expo run:android
