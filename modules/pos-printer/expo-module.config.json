@@ -1,0 +1,6 @@
+{
+  "platforms": ["android"],
+  "android": {
+    "modules": ["zk.modules.posprinter.PosPrinterModule"]
+  }
+}

@@ -1,0 +1,25 @@
+// modules/pos-printer/android/build.gradle
+plugins {
+  id 'com.android.library'
+  // Connects this module to Expo: adds expo-modules-core (Module, AsyncFunction, Record…)
+  // and Kotlin. Without it nothing in PosPrinterModule.kt compiles.
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'zk.modules.posprinter'
+version = '1.0.0'
+
+android {
+  namespace "zk.modules.posprinter"
+  defaultConfig {
+    versionCode 1
+    versionName "1.0.0"
+  }
+}
+
+dependencies {
+  // Coroutines (delay, async, withContext…). Usually provided by Expo already; listed explicitly to be safe.
+  implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2"
+  // QR code generation for raster/image QR.
+  implementation "com.google.zxing:core:3.5.3"
+}
